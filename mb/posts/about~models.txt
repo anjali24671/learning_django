@@ -1,0 +1,5 @@
+1) We create a database model. which will store and display our posts,
+Django's ORM will automatically turn this model into a database table for us. 
+2) activate it: (whenever we create or modify a model)
+	- make migration file 
+	- build the actual database with the migrate commmand

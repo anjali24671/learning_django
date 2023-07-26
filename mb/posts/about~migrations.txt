@@ -1,0 +1,6 @@
+migrations file works like a version control system for your database
+Each migration file is associated with a specific app in your Django project and resides in the "migrations" directory within that app. When you run the makemigrations command, Django analyzes the differences between your current models and the previous state of the database schema (recorded in the existing migration files). It then generates a new migration file that captures the necessary changes to bring the database schema up to date.
+
+For example, if you add a new field to a model, the generated migration file will contain instructions to create the corresponding column in the database table. If you delete a model, the migration file will contain instructions to drop the corresponding table.
+
+When you run the migrate command, Django applies these migration files in order, sequentially updating the database schema to match your models. Each migration is recorded in the database, so Django knows which migrations have been applied and which are pending

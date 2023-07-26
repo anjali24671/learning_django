@@ -1,0 +1,2 @@
+1) This file is created, the first time we run migrate. migrate will sync the database with the current state of any database model contained in the project. {It will update the database with the current status of our project
+}

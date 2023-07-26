@@ -1,0 +1,8 @@
+<h1>Message board homepage</h1>
+<ul>
+    <!-- We have created our own variable post, and used for template to iterate it -->
+
+    {% for post in object_list %}
+      <li>{{ post.text }}</li>
+    {% endfor %}
+</ul>
